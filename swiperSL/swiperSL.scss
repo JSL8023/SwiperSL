@@ -1,0 +1,127 @@
+.swiperSL {
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// 轮播图样式
+.cardSwiper {
+  width: 100%;
+  height: 420rpx !important;
+  background: #ffffff;
+  position: relative;
+}
+
+.swiper-item {
+  width: 258px !important;
+  border-radius: 10px;
+
+  left: 246rpx;
+  overflow: hidden;
+  box-sizing: border-box;
+  // padding: 40rpx 0rpx 70rpx;
+}
+
+.swiper-view {
+  width: 258px !important;
+  height: 372px !important;
+
+  display: block;
+  border-radius: 10rpx;
+  transform: scale(0.74);
+  transition: all 0.2s ease-in 0s;
+  overflow: hidden;
+  background: #FFFBEF;
+  text-align: center;
+  font-family: PingFangSC-Regular,
+    PingFang SC;
+}
+
+.swiper-item.cur {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 246rpx;
+
+}
+
+.swiper-item.curs {
+  z-index: 9;
+  transform: translate(50%, 0px) translateZ(0px) !important;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-item.curLeft {
+  z-index: 9;
+  transform: translate(50%, 0px) translateZ(0px) !important;
+}
+
+.swiper-item.curRight {
+  z-index: 9;
+  transform: translate(-50%, 0px) translateZ(0px) !important;
+}
+
+.swiper-item.cursLt {
+  z-index: 6;
+  transform: translate(100%, 0px) translateZ(0px) !important;
+}
+
+.swiper-item.cursRt {
+  z-index: 6;
+  transform: translate(-100%, 0px) translateZ(0px) !important;
+}
+
+.swiper-item.cur .swiper-view {
+  transform: none;
+  transition: all 0.2s ease-in 0s;
+  background: #FFF5D4;
+  box-shadow: 0px 2px 4px 0px #FFF5D4;
+}
+
+.swiper-item.curs .swiper-view {
+  transform: none;
+  transform: scale(0.85);
+  transition: all 0.2s ease-in 0s;
+  background: #FFF9E6;
+}
+
+// cell 样式
+.header {
+  display: block;
+  margin: 0 auto;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  margin-top: 41rpx;
+}
+
+.title {
+  width: 100%;
+  font-size: 34rpx;
+  font-weight: 400;
+  color: #333333;
+  padding-top: 17rpx;
+  line-height: 48rpx;
+}
+
+.amount {
+  font-size: 36rpx;
+  font-family: Helvetica-Bold, Helvetica;
+  font-weight: bold;
+  color: #FF5F43;
+  padding-top: 14rpx;
+  line-height: 43rpx;
+}
+
+.remark {
+  font-size: 24px;
+  font-weight: 400;
+  color: #999999;
+  padding-top: 4rpx;
+  line-height: 33rpx;
+}
